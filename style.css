@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family= Kdam+Thmor+Pro & display=swap') ;
+
+
+
+
+* {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(201, 241, 241); 
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    height: 80px;
+    right: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+nav {
+    width: 70%;
+    
+}
+
+ul {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 20px;
+    
+}
+li {
+    list-style: 60px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px;
+    transition: .5s;
+    font-weight: bold;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: rgb(61, 0, 204);
+}
+
+#logo {
+    width: 140px;
+    height: 170px;
+    top: 20px;
+    left: 50%;
+}
+
+#banner {
+    background-image: url('https://www.verzani.com.br/wp-content/uploads/2022/01/post_thumbnail-539458554138d9d75b58424d5b95206d.jpeg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 850px;
+    margin-top: 10px;
+}
+
+#video {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.video {
+    width: 50%;
+}
+
+#motivo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.descricao {
+    color: black;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: rgb(19, 37, 197);
+    color: black;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+.todas-tecnologias-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.tecnologias-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color:rgb(16, 4, 72);
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.10);
+}
+
+.banner-1 {
+    background-image: url(https://static3.tcdn.com.br/img/img_prod/332274/camera_intelbras_vhl_1120b_hd_720p_hdcvi_bullet_infra_20m_branca_resistente_a_chuva_10604_1_b201a62e927f9917f5cb1bc0f61782b3.jpg);
+    
+    
+}
+
+.banner-2 {
+    background-image: url(https://www.upperseg.com.br/img/products/kit-alarme-intelbras-sem-fio-central-c--discadora-2-sensores-ivp-e-4-sensores-magneticos-para-portas-e-janelas_1_650.jpg);
+}
+
+.banner-3 {
+    background-image: url(https://static3.tcdn.com.br/img/img_prod/332274/camera_ip_sem_fio_wifi_hd_720p_robo_wireless_com_audio_grava_em_cartao_sd_com_2_antenas_e_visao_notu_2954_1_20180610160440.jpg);
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: rgb(0, 0, 0);
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+    #video {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video {
+        width: 100%;
+    }
+
+    #motivo {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .descricao {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .tecnologias-container {
+        grid-template-columns: 1fr;
+        margin-top: 90px;
+    }
+}
+/* .text {
+    color: black;
+    height: 80px;
+    right: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+
+} */
